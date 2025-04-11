@@ -1,10 +1,15 @@
-/* Style for weather info */
 .weather-info {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
     padding: 10px;
     margin-top: 10px;
     color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.weather-info:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .weather-info p {
@@ -12,13 +17,18 @@
     font-size: 1rem;
 }
 
-/* Style for news info */
+/* === NEWS INFO === */
 .news-info {
     margin-top: 20px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
     padding: 10px;
     color: white;
+    transition: transform 0.3s ease;
+}
+
+.news-info:hover {
+    transform: scale(1.02);
 }
 
 .news-info ul {
@@ -28,18 +38,26 @@
 
 .news-info li {
     margin-bottom: 15px;
+    perspective: 1000px;
+}
+
+.news-info li:hover {
+    transform: rotateY(5deg);
+    transition: transform 0.4s ease;
 }
 
 .news-info a {
     text-decoration: none;
     color: #1a73e8;
+    transition: color 0.3s ease;
 }
 
 .news-info a:hover {
     text-decoration: underline;
+    color: #63a4ff;
 }
 
-/* General body styles */
+/* === GENERAL STYLES === */
 body {
     background: #4682b4;
     margin: 0;
@@ -63,6 +81,13 @@ body {
     border: none;
     padding: 0 10px;
     color: white;
+    transition: all 0.3s ease;
+}
+
+#country_text:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 45vw;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
 }
 
 #country_text::placeholder {
@@ -82,6 +107,11 @@ h1 {
     display: block;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.flags:hover {
+    transform: scale(1.05);
 }
 
 #result {
@@ -104,4 +134,14 @@ h1 {
 .validity {
     color: #ff4444;
     font-size: 1rem;
+}
+
+/* === ANIMATIONS === */
+#result > div {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }

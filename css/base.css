@@ -1,0 +1,107 @@
+/* Style for weather info */
+.weather-info {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+}
+
+.weather-info p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+/* Style for news info */
+.news-info {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+}
+
+.news-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.news-info li {
+    margin-bottom: 15px;
+}
+
+.news-info a {
+    text-decoration: none;
+    color: #1a73e8;
+}
+
+.news-info a:hover {
+    text-decoration: underline;
+}
+
+/* General body styles */
+body {
+    background: #4682b4;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#input-container {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#country_text {
+    margin: 0 auto;
+    border-radius: 0.62em;
+    width: 40vw;
+    height: 5vh;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    padding: 0 10px;
+    color: white;
+}
+
+#country_text::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+}
+
+.flags {
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 3%;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#result {
+    margin: 0 auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 0.8%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.validity {
+    color: #ff4444;
+    font-size: 1rem;
+}
